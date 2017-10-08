@@ -36,7 +36,7 @@ new_RHS[0] = new_RHS[0][:-2]
 
 for i in range(0, len(terms_With_LR_Term)):
     new_RHS[1] = new_RHS[1] + terms_With_LR_Term[i].strip(non_Terminal) + new_Non_Terminal + "|"
-new_RHS[1] = new_RHS[1] + "epsilon"
+new_RHS[1] = new_RHS[1] + "ε"
 
 print("*****OUTPUT*****")
 print(non_Terminal + "->" + new_RHS[0])
